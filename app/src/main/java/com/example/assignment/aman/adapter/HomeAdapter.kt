@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.assignment.R
 import com.example.assignment.aman.models.SingleItemResponse
 import com.squareup.picasso.Picasso
+import de.hdodenhof.circleimageview.CircleImageView
 import java.lang.Exception
 
 class HomeAdapter: RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
@@ -34,10 +35,10 @@ class HomeAdapter: RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
     }
 
      //need to write base url for loading profile picture
-    var baseURl=""
+    var baseURl="https://gupsup.com/"
     inner  class ViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
     {
-        var profileImageView:ImageView=itemView.findViewById(R.id.profileImage)
+        var profileImageView:CircleImageView=itemView.findViewById(R.id.profileImage)
         var nameTV:TextView=itemView.findViewById(R.id.nameTV)
         var connectTV:TextView=itemView.findViewById(R.id.connectTV)
         var removeTV:TextView=itemView.findViewById(R.id.removeTV)

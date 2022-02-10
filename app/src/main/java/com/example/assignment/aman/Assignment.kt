@@ -19,5 +19,4 @@ class Assignment : Application() {
             INSTANCE = applicationContext as Assignment?
         }
     }
-
 }
